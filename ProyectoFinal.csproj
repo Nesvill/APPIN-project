@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{580EC06C-CBCE-412D-82DD-BF8C0AA60BB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoFinal</RootNamespace>
+    <AssemblyName>ProyectoFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmINMAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmINMAT.Designer.cs">
+      <DependentUpon>FrmINMAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNosotros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNosotros.Designer.cs">
+      <DependentUpon>FrmNosotros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVIDEO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVIDEO.Designer.cs">
+      <DependentUpon>FrmVIDEO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVIN.Designer.cs">
+      <DependentUpon>FrmVIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INMAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INMAT.Designer.cs">
+      <DependentUpon>INMAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PRONUN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRONUN.Designer.cs">
+      <DependentUpon>PRONUN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmINMAT.resx">
+      <DependentUpon>FrmINMAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNosotros.resx">
+      <DependentUpon>FrmNosotros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVIDEO.resx">
+      <DependentUpon>FrmVIDEO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVIN.resx">
+      <DependentUpon>FrmVIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INMAT.resx">
+      <DependentUpon>INMAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRONUN.resx">
+      <DependentUpon>PRONUN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\proooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\463a3f9f-7dc2-436c-b55d-c8e216b62cf8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\9088729f-e8d5-496f-b52d-8a9f192eba2b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fondovin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\suave-nublado-es-fondo-degradado-colores-pastel-color-dulce_6529-1609.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gradient-pink-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\d3226b3d445be1d37679efe85bb0370f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\2044572f-1179-447a-a524-c7f363179d96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fondo-abstracto-degradado-blanco-gris_53876-60244.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\0b8f8551-7ea8-49c3-921f-4e8a2fd4cd3f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\recorte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\casa-dibujos-animados_11460-1609.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\INCISOS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\casita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bienvenido.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fbafd4e2-5672-4e1b-a45f-93938415389c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\WELCOME.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\INMAT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\Micro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\MicroOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\playoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\Record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\Recordoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\Stopoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\MIC\voicenote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\salir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\OTRA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\AURORA.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Yo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\asul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\fomdo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\digital-art-star-wars-death-star-black-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cuanto-costaria-construir-estrella-muerte-imperio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\10836.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\22482.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\wood-texture-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\kisspng-easter-bunny-rabbit-cartoon-illustration-grey-small-rabbit-5aa69344512ff7.4153853215208661163326.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\caffe261bb0edf7009acbecfa988b9cd.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\paisaje.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tierra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\casitaaaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\conejitoaudifono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\perrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\microof.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\nubes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pajaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\otrasxas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Cloud-1280x720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\botonA.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\piza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\170742420_445504813211480_2652268775977943356_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\vin.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
